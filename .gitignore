@@ -1,2 +1,4 @@
 # Project exclude paths
+!**/src/main/**
+!**/src/test/**
 /target/

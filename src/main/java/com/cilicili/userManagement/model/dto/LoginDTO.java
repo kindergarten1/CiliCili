@@ -16,9 +16,9 @@ import lombok.Data;
 @Schema(name = "LoginDTO", description = "登录信息")
 public class LoginDTO {
 
-    @NotBlank(message = CommonMsg.LOGIN_NAME_COULD_NOT_BE_NULL)
-    @Schema(name = "loginName", description = "登录名称")
-    private String loginName;
+    @NotBlank(message = CommonMsg.LOGIN_ACCOUNT_COULD_NOT_BE_NULL)
+    @Schema(name = "loginAccount", description = "登录账号")
+    private String loginAccount;
 
     @NotBlank(message = CommonMsg.LOGIN_PASSWORD_COULD_NOT_BE_NULL)
     @Schema(name = "loginPassword", description = "登录密码")
