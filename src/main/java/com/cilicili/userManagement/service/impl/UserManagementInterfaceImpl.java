@@ -39,8 +39,6 @@ public class UserManagementInterfaceImpl implements UserManagementInterface {
         return null;
     }
 
-
-
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return null;

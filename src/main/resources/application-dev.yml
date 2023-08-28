@@ -5,3 +5,26 @@ springfox:
   documentation:
     swagger-ui:
       enabled: true
+
+
+spring:
+
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306
+      username: root
+      password: xjk,929686415
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  session:
+    redis:
+      repository-type: default
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
