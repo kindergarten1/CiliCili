@@ -41,10 +41,4 @@ public class UserManagementController {
         return userManagementInterface.register(registerDTO);
     }
 
-    @Operation(summary = "用户注册 -- SlyAimer", tags = "Login")
-    @GetMapping("/test")
-    public ResponseVO<?> test() {
-
-        return ResponseVO.ok("test");
-    }
 }
