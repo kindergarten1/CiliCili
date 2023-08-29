@@ -7,12 +7,10 @@ import com.cilicili.userManagement.service.UserManagementInterface;
 import com.unitl.response.ResponseVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
 
 
 /**
@@ -22,11 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Tag(name = "Login", description = "用户登录")
 @RestController
-@RequestMapping("/User")
+@RequestMapping("/user")
 public class UserManagementController {
 
 
-    @Resource UserManagementInterface userManagementInterface;
+    @Resource
+    UserManagementInterface userManagementInterface;
 
     @Operation(summary = "用户登录 -- SlyAimer", tags = "Login")
     @PostMapping("/login")
@@ -40,5 +39,12 @@ public class UserManagementController {
     public ResponseVO<?> userRegistration(@Valid @RequestBody UserRegisterDTO registerDTO) {
 
         return userManagementInterface.register(registerDTO);
+    }
+
+    @Operation(summary = "用户注册 -- SlyAimer", tags = "Login")
+    @GetMapping("/test")
+    public ResponseVO<?> test() {
+
+        return ResponseVO.ok("test");
     }
 }

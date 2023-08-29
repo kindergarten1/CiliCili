@@ -4,8 +4,8 @@ import com.cilicili.userManagement.model.dto.LoginDTO;
 import com.cilicili.userManagement.model.dto.UserRegisterDTO;
 import com.cilicili.userManagement.service.UserManagementInterface;
 import com.unitl.response.ResponseVO;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
+//import org.springframework.security.core.userdetails.UserDetails;
+//import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 /**
@@ -39,8 +39,8 @@ public class UserManagementInterfaceImpl implements UserManagementInterface {
         return null;
     }
 
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return null;
-    }
+//    @Override
+//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+//        return null;
+//    }
 }

@@ -4,5 +4,15 @@
       "name": "mybatis-plus.session.store-type",
       "type": "java.lang.String",
       "description": "Description for mybatis-plus.session.store-type."
-  }
-] }
+    },
+    {
+      "name": "springfox.documentation.swagger-ui.title",
+      "type": "java.lang.String",
+      "description": "Description for springfox.documentation.swagger-ui.title."
+    },
+    {
+      "name": "springdoc.swagger-ui.path",
+      "type": "java.lang.String",
+      "description": "Description for springdoc.swagger-ui.path."
+    }
+  ] }

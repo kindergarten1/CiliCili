@@ -1,10 +1,6 @@
 server:
-  port: 9099
+  port: 8080
 
-springfox:
-  documentation:
-    swagger-ui:
-      enabled: true
 
 
 spring:
@@ -20,11 +16,24 @@ spring:
       max-file-size: 10MB
       max-request-size: 10MB
 
-  session:
-    redis:
-      repository-type: default
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
+
+# Logger Config
+logging:
+  level:
+    com.hexadecimal: debug
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui/index.html
+

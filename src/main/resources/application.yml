@@ -2,6 +2,12 @@ spring:
   profiles:
     active: dev
 
+  security:
+    user:
+      name: admin
+      password: admin
+
+
 mybatis-plus:
   global-config:
     db-config:
@@ -16,3 +22,5 @@ mybatis-plus:
       # 逻辑删除默认值
       logic-delete-value: 1
       logic-not-delete-value: 0
+
+#配置白名单 放行路径
