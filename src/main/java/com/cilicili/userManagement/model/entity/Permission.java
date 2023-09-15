@@ -21,7 +21,7 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "permission")
+@Table(name = "sys_permission")
 @EqualsAndHashCode(callSuper = true)
 @Schema(name = "Permission",description = "菜单授权")
 public class Permission extends BaseEntity {

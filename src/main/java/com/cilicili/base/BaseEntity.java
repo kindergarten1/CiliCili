@@ -1,9 +1,6 @@
 package com.cilicili.base;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.FieldStrategy;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Id;
@@ -31,10 +28,11 @@ import java.time.LocalDateTime;
 public class BaseEntity implements Serializable {
 
     @Serial
+    @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 
     @Id
-    @TableId
+    @TableId(type = IdType.AUTO)
     @Schema(description = "主键id")
     private Integer id ;
 

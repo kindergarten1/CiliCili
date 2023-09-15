@@ -20,7 +20,7 @@ import java.io.Serial;
 
 @Data
 @Entity
-@Table(name = "role_permission")
+@Table(name = "sys_role_permission")
 @EqualsAndHashCode(callSuper = true)
 @Schema(name = "角色权限")
 public class RolePermission extends BaseEntity {

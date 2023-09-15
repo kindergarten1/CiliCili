@@ -15,7 +15,8 @@ public class CommonMsg {
      */
     public static final String INCORRECT_PHONE_FORMAT = "请填写正确的手机号!";
     public static final String PHONE_NUMBER_COULD_BE_NULL = "手机号不能为空!";
-    public static final String LOGIN_NAME_COULD_NOT_BE_NULL = "登录名称不能为空";
+    public static final String NICKNAME_COULD_NOT_BE_NULL = "登录账号不能为空";
+    public static final String LOGIN_NAME_COULD_NOT_BE_NULL = "登录账号不能为空";
     public static final String LOGIN_ACCOUNT_COULD_NOT_BE_NULL = "登录账号不能为空";
     public static final String LOGIN_PASSWORD_COULD_NOT_BE_NULL = "登录密码不能为空";
     public static final String PASSWORD_ERROR = "密码错误!";

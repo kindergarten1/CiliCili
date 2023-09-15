@@ -14,5 +14,10 @@
       "name": "springdoc.swagger-ui.path",
       "type": "java.lang.String",
       "description": "Description for springdoc.swagger-ui.path."
+    },
+    {
+      "name": "springdoc.api-info",
+      "type": "java.lang.String",
+      "description": "Description for springdoc.api-info."
     }
   ] }

@@ -20,7 +20,7 @@ import java.util.List;
  */
 @Data
 @Entity
-@Table(name = "role")
+@Table(name = "sys_role")
 @EqualsAndHashCode(callSuper = true)
 @Schema(description = "角色")
 public class Role extends BaseEntity {
