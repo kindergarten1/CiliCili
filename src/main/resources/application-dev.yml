@@ -4,12 +4,10 @@ server:
 
 
 spring:
-
   datasource:
-    druid:
-      url: jdbc:mysql://localhost:3306
-      username: root
-      password: xjk,929686415
+    url: jdbc:mysql://localhost:3306/cilicili?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: xjk,929686415
 
   servlet:
     multipart:
@@ -19,6 +17,15 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  security:
+    user:
+      name: admin
+      #      password: 123456
+      password: "$2a$10$UUbMgKe4ozOFfcfJcC6KoOQHLixmMNF.Evx.E5/AkidUExBGXuq6m"
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
 
 mybatis-plus:
   configuration:
@@ -30,10 +37,5 @@ logging:
   level:
     com.hexadecimal: debug
 
-springdoc:
-  api-docs:
-    enabled: true
-    path: /v3/api-docs
-  swagger-ui:
-    path: /swagger-ui/index.html
+
 

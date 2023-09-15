@@ -20,9 +20,8 @@ public class CiliCiliApplication {
         System.out.println("\n----------------------------------------------------------\n\t" +
                 "Application ClientApplication is running! Access URLs:\n\t" +
                 "Local: \t\thttp://localhost:" + port + "/\n\t" +
-                "External: \thttp://" + ip + ":" + port + "/\n\t" +
                 "swagger-ui: \thttp://" + ip + ":" + port  + "/swagger-ui/index.html\n\t" +
-                "Doc: \t\thttp://" + ip + ":" + port + "/v2/api-docs\n" +
+                "Doc: \t\thttp://" + ip + ":" + port + "/doc.html\n" +
                 "----------------------------------------------------------");
     }
 

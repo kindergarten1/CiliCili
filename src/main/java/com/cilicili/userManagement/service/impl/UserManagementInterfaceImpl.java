@@ -26,7 +26,7 @@ public class UserManagementInterfaceImpl implements UserManagementInterface {
     @Override
     public ResponseVO<?> login(LoginDTO loginDTO) {
 
-        return null;
+        return ResponseVO.ok();
     }
 
     /**
@@ -36,11 +36,7 @@ public class UserManagementInterfaceImpl implements UserManagementInterface {
      */
     @Override
     public ResponseVO<?> register(UserRegisterDTO registerDTO) {
-        return null;
+        return ResponseVO.ok();
     }
 
-//    @Override
-//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-//        return null;
-//    }
 }

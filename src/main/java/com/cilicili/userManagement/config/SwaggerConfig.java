@@ -22,7 +22,7 @@ public class SwaggerConfig {
     public OpenAPI springShopOpenAPI() {
         return new OpenAPI()
                 .info(new Info().title("标题")
-                        .description("我的API文档")
+                        .description("aimer-background")
                         .version("v1")
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")))
                         .externalDocs(new ExternalDocumentation()
